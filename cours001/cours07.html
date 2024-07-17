@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <button id="idb" onmouseover="afficher()"> clique moi   </button>
+     <div>
+        <h1>montreal</h1>
+     </div>
+     <script>
+        function afficher(){
+           mondiv= document.querySelector('div');
+           mondiv.style.backgroundColor="yellow"
+           mondiv.style.fontWeight="bold"
+           let a = document.createElement('h1');
+           a.innerHTML="montreal";
+           mondiv.innerHTML="";
+           mondiv.appendChild(a);
+               }
+     </script>
+</body>
+</html>

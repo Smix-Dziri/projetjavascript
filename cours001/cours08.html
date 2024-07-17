@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <style>
+        .spinner-double
+        {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+        }
+        .spinner-double::after 
+        {
+            content: "";
+            display: block;
+            width: 64px;
+            height: 64px;
+            margin: 8px;
+            border-radius: 50%;
+            border: 6px solid #220202;
+            border-color: #100101 transparent #140101 transparent;
+            animation: double-spin 1.2s linear infinite;
+        }
+        @keyframes double-spin
+        {
+            0% { transform : rotate(0deg);}
+            100% {transform: rotate(360deg);}
+
+
+
+        }
+
+    </style>
+    
+    
+
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <div class="spinner-double"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

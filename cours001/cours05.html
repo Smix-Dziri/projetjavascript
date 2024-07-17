@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let object1 ={
+            prenom : "ibrahim",
+            nom : "segma",
+            age : 20,
+            info : function(){
+                return this.prenom+" "+this.nom+" "+this.age
+            },
+            tab : ["messi","rolando","ronadinho","insta","roney"]
+        }
+        object1.tab[1]="gana"
+        object1.tab.push('torres')
+            document.write(object1.tab)
+        
+        </script>
+</body>
+</html>

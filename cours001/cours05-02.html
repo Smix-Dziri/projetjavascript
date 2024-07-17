@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class etudiant{
+            constructor(nom,prenom,age){
+                this.nom=nom;
+               this.prenom=prenom;
+               this.age=age;
+            
+            }
+            info (){
+                document.write('BENSOIR A TOUS');
+            }
+            aa = function(){
+                return this.prenom+' '+this.nom+' '+this.age
+            }
+
+        }
+
+        e1 = new etudiant ("mouna","selma",18);
+        alert(e1.nom)
+        e1.info()
+        console.log(e1.aa())
+    </script>
+</body>
+</html>

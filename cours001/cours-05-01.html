@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function personne(p,n,a){
+            this.prenom=p;
+            this.nom=n;
+            this.age=a;
+            this.infos=function(){
+                return this.prenom+" "+this.nom+" "+this.age;
+            
+            }
+        }
+        p1 = new personne("ABDOU","TINE",16);
+        p2 = new personne("biny","hajar",30);
+        p3 = new personne("mohamed","ahmed",20);
+        alert(p1.infos())
+    
+    </script>
+</body>
+</html>
